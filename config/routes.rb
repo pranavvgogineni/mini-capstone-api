@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get "/allproducts" => "products#print_products"
+  get "/products" => "products#index"
+  get "/products/:id" => "products#show"
 end
