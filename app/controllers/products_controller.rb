@@ -11,10 +11,10 @@ class ProductsController < ApplicationController
 
   def create
     product = Product.create(
-      name: "Video game",
-      price: 60,
-      image_url: "insert",
-      description: "Game meant for fun played on console",
+      name: params[:name],
+      price: params[:price],
+      image_url: params[:image_url],
+      description: params[:description],
     )
     render json: product.as_json
   end

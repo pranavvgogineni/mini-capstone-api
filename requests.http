@@ -1,3 +1,9 @@
 POST http://localhost:3000/products.json
 Content-Type: application/json
 
+{
+  "name": "Mouse",
+  "price": 30,
+  "image_url": "insert",
+  "description": "tool used for navigating a computer" 
+}
