@@ -22,4 +22,13 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
       post "/products.json", params: { name: "test product", price: 1, image_url: "image.jpg", description: "test description" }
     end
   end
+
+  test "update" do
+    product = Product.first
+    patch "/products/#{product.id}.json", params: { name: "Updated name" }
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal "Updated name", data["name"]
+  end
 end

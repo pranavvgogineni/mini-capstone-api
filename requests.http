@@ -1,3 +1,4 @@
+###
 POST http://localhost:3000/products.json
 Content-Type: application/json
 
@@ -6,4 +7,12 @@ Content-Type: application/json
   "price": 30,
   "image_url": "insert",
   "description": "tool used for navigating a computer" 
+}
+
+###
+PATCH http://localhost:3000/products/2.json 
+Content-Type: application/json
+
+{
+  "name": "Dell Mouse"
 }
