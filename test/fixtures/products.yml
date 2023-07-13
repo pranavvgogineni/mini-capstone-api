@@ -5,9 +5,11 @@ one:
   price: 10
   image_url: MyString
   description: food
+  number_items: 10
 
 two:
   name: soda
   price: 1
   image_url: MyString
   description: soft drink
+  number_items: 4
