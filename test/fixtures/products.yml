@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  supplier: one
   name: pizza
   price: 10
-  image_url: MyString
   description: food
   number_items: 10
 
 two:
+  supplier: one
   name: soda
   price: 1
-  image_url: MyString
   description: soft drink
   number_items: 4
