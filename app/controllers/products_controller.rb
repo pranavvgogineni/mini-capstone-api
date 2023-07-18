@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def index
+    pp current_user
     @products = Product.all
     render :index
   end

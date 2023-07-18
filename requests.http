@@ -1,5 +1,6 @@
 ###
 GET http://localhost:3000/products.json
+Authorization: Bearer 
 
 ###
 GET http://localhost:3000/products/2.json
@@ -31,8 +32,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Pranav",
-  "email": "pranav@test.com",
+  "name": "Lebron",
+  "email": "lebron@test.com",
   "password": "what",
   "password_confirmation": "what"
 }
