@@ -48,7 +48,7 @@ Content-Type: application/json
 }
 
 ### creates a new order
-POST http://localhost:3000/orders.json
+POST http://localhost:3000/order.json
 Content-Type: application/json
 
 {
@@ -61,4 +61,7 @@ Content-Type: application/json
 }
 
 ### shows one order
-GET http://localhost:3000/orders/1.json
+GET http://localhost:3000/order/1.json
+
+### shows all orders
+GET http://localhost:3000/orders.json
