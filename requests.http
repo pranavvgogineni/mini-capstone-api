@@ -1,11 +1,11 @@
-###
+### shows all products
 GET http://localhost:3000/products.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk3MzAyNzV9.6TAIKhFjDDtevBNTYdLBggUUVmxjAabml5Tytlk8Eqk
 
-###
+### shows one product
 GET http://localhost:3000/products/2.json
 
-###
+### creates a product
 POST http://localhost:3000/products.json
 Content-Type: application/json
 
@@ -16,7 +16,7 @@ Content-Type: application/json
   "description": "tool used for navigating a computer" 
 }
 
-###
+### updates a product
 PATCH http://localhost:3000/products/2.json 
 Content-Type: application/json
 
@@ -24,10 +24,10 @@ Content-Type: application/json
   "name": "Dell Mouse"
 }
 
-###
+### deletes a product
 DELETE http://localhost:3000/products/4.json
 
-###
+### creates a new user
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
@@ -38,7 +38,7 @@ Content-Type: application/json
   "password_confirmation": "what"
 }
 
-###
+### logs user in for a sessoin
 POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
@@ -46,3 +46,19 @@ Content-Type: application/json
   "email": "pranav@test.com",
   "password": "what"
 }
+
+### creates a new order
+POST http://localhost:3000/orders.json
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "product_id": 2,
+  "quantity": 1,
+  "subtotal": 499.00,
+  "tax": 40,
+  "total": 539.00
+}
+
+### shows one order
+GET http://localhost:3000/orders/1.json
