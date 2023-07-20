@@ -16,15 +16,15 @@ class OrdersControllerTest < ActionDispatch::IntegrationTest
 
   test "create" do
     assert_difference "Order.count", 1 do
-      post "/order.json",
+      post "/orders.json",
         params: { product_id: Product.first.id, quantity: 10 },
         headers: { "Authorization" => "Bearer #{@jwt}" }
-      assert_response 201
+      assert_response 200
     end
   end
 
   test "show" do
-    get "/order/#{@order.id}.json", headers: { "Authorization" => "Bearer #{@jwt}" }
+    get "/orders/#{@order.id}.json", headers: { "Authorization" => "Bearer #{@jwt}" }
     assert_response 200
 
     data = JSON.parse(response.body)

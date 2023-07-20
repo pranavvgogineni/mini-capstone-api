@@ -54,12 +54,11 @@ Content-Type: application/json
 
 {
   "product_id": 2,
-  "quantity": 1,
-  "subtotal": 499.00
+  "quantity": 1
 }
 
 ### shows one order
-GET http://localhost:3000/order/1.json
+GET http://localhost:3000/orders/1.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk4MTkxMzl9.THKbYjtHRLumCyL_dDd0ewxvLizppky1YmLZjeLuYt4
 
 ### shows all orders
