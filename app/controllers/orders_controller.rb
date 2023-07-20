@@ -20,7 +20,7 @@ class OrdersController < ApplicationController
   end
 
   def show
-    order = Order.find_by(id: params[:id])
+    order = Order.where(user_id: current_user.id)
     render json: order.as_json
   end
 
