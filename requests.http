@@ -48,7 +48,7 @@ Content-Type: application/json
 }
 
 ### creates a new order
-POST http://localhost:3000/order.json
+POST http://localhost:3000/orders.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk4MTkxMzl9.THKbYjtHRLumCyL_dDd0ewxvLizppky1YmLZjeLuYt4
 Content-Type: application/json
 
