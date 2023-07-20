@@ -64,3 +64,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk4MTkxM
 
 ### shows all orders
 GET http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk4MTkxMzl9.THKbYjtHRLumCyL_dDd0ewxvLizppky1YmLZjeLuYt4
