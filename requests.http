@@ -8,17 +8,21 @@ GET http://localhost:3000/products/2.json
 ### creates a product
 POST http://localhost:3000/products.json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
 
 {
-  "name": "Mouse",
-  "price": 30,        
+  "name": "Xbox",
+  "price": 499.00,        
   "image_url": "insert",
-  "description": "tool used for navigating a computer" 
+  "description": "Microsoft Console",
+  "number_items": 15,
+  "supplier_id": 2
 }
 
 ### updates a product
 PATCH http://localhost:3000/products/2.json 
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
 
 {
   "name": "Dell Mouse"
@@ -26,6 +30,7 @@ Content-Type: application/json
 
 ### deletes a product
 DELETE http://localhost:3000/products/4.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
 
 ### creates a new user
 POST http://localhost:3000/users.json
@@ -49,7 +54,7 @@ Content-Type: application/json
 
 ### creates a new order
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk4MTkxMzl9.THKbYjtHRLumCyL_dDd0ewxvLizppky1YmLZjeLuYt4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
 Content-Type: application/json
 
 {
@@ -59,8 +64,8 @@ Content-Type: application/json
 
 ### shows one order
 GET http://localhost:3000/orders/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk4MTkxMzl9.THKbYjtHRLumCyL_dDd0ewxvLizppky1YmLZjeLuYt4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
 
 ### shows all orders
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk4MTkxMzl9.THKbYjtHRLumCyL_dDd0ewxvLizppky1YmLZjeLuYt4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
