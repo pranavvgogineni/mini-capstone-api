@@ -14,6 +14,11 @@ class CartedProductsController < ApplicationController
   end
 
   def index
-    @carted_products = CartedProduct.all
+    @carted_products = current_user.carted_products.where(status: "carted")
+    if @carted_products
+      render :index
+    else
+      render json: { message: "cart empty" }
+    end
   end
 end
