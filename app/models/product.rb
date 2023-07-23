@@ -8,7 +8,8 @@ class Product < ApplicationRecord
   belongs_to :supplier
   has_many :images
   has_many :orders
-  has_many :categoryproducts
+  has_many :category_products
+  has_many :categories, through: :category_products
 
   def supplier
     Supplier.find_by(id: self.supplier_id)
