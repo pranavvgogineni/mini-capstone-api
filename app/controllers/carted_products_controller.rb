@@ -12,4 +12,8 @@ class CartedProductsController < ApplicationController
       render json: { errors: @carted_product.errors.full_messages }, status: 422
     end
   end
+
+  def index
+    @carted_products = CartedProduct.all
+  end
 end

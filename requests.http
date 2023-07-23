@@ -79,3 +79,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAyMzAwO
   "product_id": 2,
   "quantity": 1
 }
+
+### shows all carted products
+GET http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAyMzAwOTh9.gpJ7v_AtB752Eqesz_t_p-pS8aU5KjiJI8-t6MwXqLU
