@@ -54,26 +54,22 @@ Content-Type: application/json
 
 ### creates a new order
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjcyNjh9.hjz0Qivu_VggFLOfo_cT4xdvBm4C4MEAgCSHSy1Ass4
 Content-Type: application/json
 
-{
-  "product_id": 2,
-  "quantity": 1
-}
 
 ### shows one order
 GET http://localhost:3000/orders/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
 
 ### shows all orders
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
 
 ### creates carted products
 POST http://localhost:3000/carted_products.json 
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAyMzAwOTh9.gpJ7v_AtB752Eqesz_t_p-pS8aU5KjiJI8-t6MwXqLU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
 
 {
   "product_id": 2,
@@ -82,4 +78,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAyMzAwO
 
 ### shows all carted products
 GET http://localhost:3000/carted_products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAyMzAwOTh9.gpJ7v_AtB752Eqesz_t_p-pS8aU5KjiJI8-t6MwXqLU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
+
+### delete carted product
+DELETE http://localhost:3000/carted_products/6.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
