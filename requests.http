@@ -1,6 +1,8 @@
+@jwt = Bearer 
+
 ### shows all products
 GET http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk3MzAyNzV9.6TAIKhFjDDtevBNTYdLBggUUVmxjAabml5Tytlk8Eqk
+Authorization: {{jwt}}
 
 ### shows one product
 GET http://localhost:3000/products/2.json
@@ -8,7 +10,7 @@ GET http://localhost:3000/products/2.json
 ### creates a product
 POST http://localhost:3000/products.json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
+Authorization: {{jwt}}
 
 {
   "name": "Xbox",
@@ -22,7 +24,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyO
 ### updates a product
 PATCH http://localhost:3000/products/2.json 
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
+Authorization: {{jwt}}
 
 {
   "name": "Dell Mouse"
@@ -30,7 +32,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyO
 
 ### deletes a product
 DELETE http://localhost:3000/products/4.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODk5ODMyOTZ9.RwWdKyYKuCZpoCTXG3zEATLYRrvoKDoIGWlyYZHAb-k
+Authorization: {{jwt}}
 
 ### creates a new user
 POST http://localhost:3000/users.json
@@ -54,22 +56,22 @@ Content-Type: application/json
 
 ### creates a new order
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjcyNjh9.hjz0Qivu_VggFLOfo_cT4xdvBm4C4MEAgCSHSy1Ass4
+Authorization: {{jwt}}
 Content-Type: application/json
 
 
 ### shows one order
 GET http://localhost:3000/orders/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
+Authorization: {{jwt}}
 
 ### shows all orders
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
+Authorization: {{jwt}}
 
 ### creates carted products
 POST http://localhost:3000/carted_products.json 
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
+Authorization: {{jwt}}
 
 {
   "product_id": 2,
@@ -78,8 +80,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzO
 
 ### shows all carted products
 GET http://localhost:3000/carted_products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
+Authorization: {{jwt}}
 
 ### delete carted product
 DELETE http://localhost:3000/carted_products/6.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2OTAzMjgzOTd9.zdYK_7Ni8x1vL0Kaa89dmpqryps2MtyGPFcQPPmWyDs
+Authorization: {{jwt}}
